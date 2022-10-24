@@ -7,14 +7,14 @@ winner_list = []
 combination_list = []
 counter = 0
 
-# This for loop picks the 5 numbers
+# This for loop picks the 5 winning numbers
 for each in range(5):
     pick = random.choice(range_list)
     winner_list.append(pick)
     range_list.remove(pick)
 winner_list.sort()
 
-# This for loop picks the
+# This for loop picks the 5 combination numbers
 while winner_list != combination_list:
     test_range = list(range(1, upper_limit))
     combination_list.clear()
